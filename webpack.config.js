@@ -7,13 +7,13 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     entry: ['@babel/polyfill','./src/js/index.js'],
     output: {
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, 'dist'),
         filename:'js/bundle.js',
     },
 
     devServer: {
-        contentBase: path.resolve(__dirname, './dist'),
-        index: 'index.html',
+        contentBase: path.join(__dirname, 'dist'),
+        //index: 'index.html',
         port:9000
     },
 

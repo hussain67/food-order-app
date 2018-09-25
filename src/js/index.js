@@ -1,5 +1,5 @@
-// Global app controller
-import print from './modules/test';
+import string from './models/Search'
 
-const x =14;
-console.log(`I Used ${x} and`);
+//import {add as a, multiply, ID} from './views/searchViews'
+import * as searchViews from './views/searchViews'
+console.log(`Imported functions check ${searchViews.ID, 2}; ${searchViews.add(2, 4)} and ${searchViews.multiply(3, 5)}. ${string}`);
